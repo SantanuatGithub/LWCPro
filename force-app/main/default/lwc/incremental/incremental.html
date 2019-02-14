@@ -1,0 +1,21 @@
+<!--
+  @name: incremental
+  @description: used to increment a value of Integer type
+  @author: Santanu Pal
+  @date: 14 FEB 2019
+
+  Copyright (c) 2019    
+-->
+
+<template>
+    <lightning-card title={sectionName}>    
+        <lightning-layout>
+                <lightning-layout-item flexibility="auto" padding="around-small">                    
+                    <template if:true={enableIncrement}>
+                        {incrementValue}
+                        <lightning-button label="+" variant="brand" onclick={doIncrement} class="slds-m-left_large"></lightning-button>
+                    </template>
+                </lightning-layout-item>
+            </lightning-layout>
+    </lightning-card>  
+</template>
