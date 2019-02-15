@@ -1,0 +1,21 @@
+<template>
+        <lightning-card title="Calculator">
+          <div class="slds-float_right">
+            <label class="resClass">{result}</label>
+          </div>
+          <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+              <lightning-input type="number" label="Input 1 " value={input1} onchange={changeInput1}></lightning-input>
+              <lightning-combobox label="" value={mode} options={modeOptions} onchange={changeMode}></lightning-combobox>
+              <lightning-input type="number" label="Input 2 " value={input2} onchange={changeInput2}></lightning-input>
+      
+              <div class="slds-float_right slds-m-top_medium">
+                <lightning-button variant="brand" label="Calculate" onclick={doCalculation}></lightning-button>
+                &nbsp;&nbsp;
+                <lightning-button variant="brand" label="Reset" onclick={doReset}></lightning-button>
+              </div>
+            </lightning-layout-item>
+          </lightning-layout>
+        </lightning-card>
+      </template>
+      

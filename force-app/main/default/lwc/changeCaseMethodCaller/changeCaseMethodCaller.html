@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="M E T H O D  C A L L">    
+        <lightning-layout>
+                <lightning-layout-item flexibility="auto" padding="around-small"> 
+                    <lightning-input label="Input Phrase" onchange={handlePhraseChange}></lightning-input><br/>                 
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto" padding="around-small"> 
+                    <label class="slds-text-body_regular">Output Phrase</label><br/>
+                    <c-change-case></c-change-case>
+                </lightning-layout-item>
+            </lightning-layout>
+    </lightning-card>     
+</template>

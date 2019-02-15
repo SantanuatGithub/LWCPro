@@ -3,6 +3,15 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/call-incremental": [
+                "callIncremental/callIncremental.js"
+            ],
+            "c/change-case": [
+                "changeCase/changeCase.js"
+            ],
+            "c/incremental": [
+                "incremental/incremental.js"
+            ],
             "c/welcome-window": [
                 "welcomeWindow/welcomeWindow.js"
             ]
