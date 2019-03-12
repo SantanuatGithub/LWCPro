@@ -8,11 +8,15 @@
 -->
 
 <template>
-    <lightning-card title="W E L C O M E">    
-        <lightning-layout><!--if horizontal-align="space", all layout items will be in center-->
-                <lightning-layout-item flexibility="auto" padding="around-small">                    
-                    {welcomeMessage}
-                </lightning-layout-item>
+    <lightning-card title="Welcome My Friends">
+        <div class="messageClass">    
+            <lightning-layout><!--if horizontal-align="space", all layout items will be in center-->
+                    <lightning-layout-item flexibility="auto" padding="around-small"> 
+                        <div class="contentClass">                   
+                            {welcomeMessage}
+                        </div>
+                    </lightning-layout-item>
             </lightning-layout>
+        </div>
     </lightning-card>     
 </template>

@@ -3,14 +3,65 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/calculation": [
+                "calculation/calculation.js"
+            ],
+            "c/calculator": [
+                "calculator/calculator.js"
+            ],
             "c/call-incremental": [
                 "callIncremental/callIncremental.js"
+            ],
+            "c/canvas-subscriber": [
+                "canvasSubscriber/canvasSubscriber.js"
             ],
             "c/change-case": [
                 "changeCase/changeCase.js"
             ],
+            "c/change-case-method-caller": [
+                "changeCaseMethodCaller/changeCaseMethodCaller.js"
+            ],
+            "c/child-component": [
+                "childComponent/childComponent.js"
+            ],
+            "c/display-toast": [
+                "displayToast/displayToast.js"
+            ],
             "c/incremental": [
                 "incremental/incremental.js"
+            ],
+            "c/lightning-navigation": [
+                "lightningNavigation/lightningNavigation.js"
+            ],
+            "c/pallete-publisher": [
+                "palletePublisher/palletePublisher.js"
+            ],
+            "c/parent-component": [
+                "parentComponent/parentComponent.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/show-contacts-im": [
+                "showContactsIM/showContactsIM.js"
+            ],
+            "c/show-contacts-imp": [
+                "showContactsIMP/showContactsIMP.js"
+            ],
+            "c/show-contacts-u-irecord-api": [
+                "showContactsUIrecordAPI/showContactsUIrecordAPI.js"
+            ],
+            "c/show-contacts-wmf": [
+                "showContactsWMF/showContactsWMF.js"
+            ],
+            "c/show-contacts-wmfp": [
+                "showContactsWMFP/showContactsWMFP.js"
+            ],
+            "c/show-contacts-wmp": [
+                "showContactsWMP/showContactsWMP.js"
+            ],
+            "c/show-contacts-wmpp": [
+                "showContactsWMPP/showContactsWMPP.js"
             ],
             "c/welcome-window": [
                 "welcomeWindow/welcomeWindow.js"

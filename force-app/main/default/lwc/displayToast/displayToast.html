@@ -1,0 +1,16 @@
+<template>
+        <lightning-card title="Show Toast Message">    
+            <div class="inputClass">
+                <lightning-layout ><!--if horizontal-align="space", all layout items will be in center-->
+                    <lightning-layout-item flexibility="auto" padding="around-small">
+                        <lightning-input type="text" label="Message " value={msg} onchange={trackMessage}></lightning-input>
+                        <lightning-combobox label="Variant" value={variant} onchange={updateVariant} options={variantOptions}></lightning-combobox>
+                        <div class="slds-float_right slds-m-top_medium">
+                            <lightning-button variant="brand" label="Show Notification" onclick={showToast} ></lightning-button> &nbsp;&nbsp;
+                            <lightning-button variant="brand" label="Reset" onclick={doReset}></lightning-button>
+                        </div>  
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </lightning-card>
+</template>

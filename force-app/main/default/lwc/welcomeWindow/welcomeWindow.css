@@ -1,0 +1,9 @@
+.contentClass{
+    color:green;
+    font-weight: bold;
+}
+
+.messageClass{
+    border-top: 1px solid #DADA;
+    width:100%;
+}
