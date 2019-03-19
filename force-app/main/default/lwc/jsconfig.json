@@ -33,6 +33,9 @@
             "c/lightning-navigation": [
                 "lightningNavigation/lightningNavigation.js"
             ],
+            "c/master-component": [
+                "masterComponent/masterComponent.js"
+            ],
             "c/pallete-publisher": [
                 "palletePublisher/palletePublisher.js"
             ],
