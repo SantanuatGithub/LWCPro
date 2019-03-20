@@ -1,29 +1,32 @@
 import { LightningElement,track } from 'lwc';
 
-const DELAY = 1300;
+//const DELAY = 1300;
 export default class MasterComponent extends LightningElement {
 
-    @track message;
+    @track message = "LWC Lifecycle  --->  ";
 
-    generatedMesage;
+    //generatedMesage;
     
     constructor(){
         super();
 
-        this.generatedMesage = "Hey, I am from Constructor.";        
+        this.message = this.message + "Constructor from Parent --->  ";        
     }
 
     connectedCallback(){
-        this.generatedMesage = "Hey, I am from Connected Callback.";   
-        this.showMessage();     
+        this.message = this.message + "ConnectedCallback from Parent --->  ";   
     }
+    
+    renderedCallback(){
+        this.message = this.message + "RenderedCallback from Parent";   
+    } 
 
-    showMessage(){
+    /*showMessage(){
         // eslint-disable-next-line @lwc/lwc/no-async-operation
         this.delayTimeout = setTimeout(() => {
             this.message = this.generatedMesage;
         }, DELAY);
-    }
+    }*/
 
     
 
