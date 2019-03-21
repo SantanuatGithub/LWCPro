@@ -1,7 +1,8 @@
-import { LightningElement,track } from 'lwc';
+import { LightningElement, api } from 'lwc';
 
 export default class DetailComponent extends LightningElement {
-    @track message;
+    @api message;
+    hasRendered = false;
 
     constructor(){
         super();
@@ -14,7 +15,12 @@ export default class DetailComponent extends LightningElement {
     } 
 
     renderedCallback(){
-        this.message = this.message + "RenderedCallback from Child --->  ";   
+        if(!this.hasRendered){
+            this.message = this.message + "RenderedCallback from Child --->  "; 
+            this.hasRendered = true;
+
+            this.dispatchEvent(new CustomEvent("renderedEvent", { detail: true }));
+        }  
     } 
 
 }

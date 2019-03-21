@@ -4,21 +4,37 @@ import { LightningElement,track } from 'lwc';
 export default class MasterComponent extends LightningElement {
 
     @track message = "LWC Lifecycle  --->  ";
+    hasRendered = false;
+    renderedFromChild = false;
 
     //generatedMesage;
     
     constructor(){
         super();
 
-        this.message = this.message + "Constructor from Parent --->  ";        
-    }
+        this.message = this.message + "Constructor from Parent --->  ";  
+        
+    } 
+    
 
     connectedCallback(){
         this.message = this.message + "ConnectedCallback from Parent --->  ";   
     }
+
+    handleCustomEvent(event) { 
+        /*eslint-disable-next-line*/
+        console.log("res-->" + event.detail);
+        if(event.detail){
+            this.message = this.message +  "RenderedCallback from Parent";
+            this.hasRendered = true; 
+        }        
+      }
     
     renderedCallback(){
-        this.message = this.message + "RenderedCallback from Parent";   
+        if(!this.hasRendered){    
+            console.log('ENTRY');        
+            this.template.addEventListener('renderedEvent', this.handleCustomEvent.bind(this));              
+        }
     } 
 
     /*showMessage(){
