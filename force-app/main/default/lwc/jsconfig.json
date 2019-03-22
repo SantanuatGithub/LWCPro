@@ -3,6 +3,9 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/basic-section-header": [
+                "basicSectionHeader/basicSectionHeader.js"
+            ],
             "c/calculation": [
                 "calculation/calculation.js"
             ],
@@ -24,8 +27,20 @@
             "c/child-component": [
                 "childComponent/childComponent.js"
             ],
+            "c/communication-section-header": [
+                "communicationSectionHeader/communicationSectionHeader.js"
+            ],
+            "c/detail-component": [
+                "detailComponent/detailComponent.js"
+            ],
             "c/display-toast": [
                 "displayToast/displayToast.js"
+            ],
+            "c/footer": [
+                "footer/footer.js"
+            ],
+            "c/getter-setter": [
+                "getterSetter/getterSetter.js"
             ],
             "c/incremental": [
                 "incremental/incremental.js"
@@ -44,6 +59,9 @@
             ],
             "c/pubsub": [
                 "pubsub/pubsub.js"
+            ],
+            "c/server-section-header": [
+                "serverSectionHeader/serverSectionHeader.js"
             ],
             "c/show-contacts-im": [
                 "showContactsIM/showContactsIM.js"

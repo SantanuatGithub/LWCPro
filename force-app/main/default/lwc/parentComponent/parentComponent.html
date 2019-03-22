@@ -1,22 +1,25 @@
 <template>
-        <lightning-card title = "Custom Event Communication" icon-name="utility:connected_apps">
-            
-          <lightning-layout>
-            <lightning-layout-item flexibility="auto" padding="around-small">
-              <div class="padding-around:small">
-                {question}
-              </div>
-              <div class="answClass">
-                {answer}
-              </div>
-              <div class="slds-m-top_medium">
-                <c-child-component onanswer={handleAnswer}></c-child-component>
-              </div>
-            </lightning-layout-item>
-          </lightning-layout>
-          <p slot="footer"><lightning-badge label="Tag1"></lightning-badge>
-            <lightning-badge label="Tag2"></lightning-badge>
-            <lightning-badge label="Tag3"></lightning-badge></p>
-        </lightning-card>
+    <lightning-card title = "Custom Event Communication" icon-name="utility:events">          
+        <div class="contentStyle">
+            <lightning-layout>          
+                <lightning-layout-item flexibility="auto" padding="around-small">               
+                    <div class="padding-around:small">
+                      {question}
+                    </div>
+                    <div class="answClass">
+                      {answer}
+                    </div>
+                    <div class="slds-m-top_medium">
+                      <c-child-component onanswer={handleAnswer}></c-child-component>
+                    </div>
+                </lightning-layout-item>         
+            </lightning-layout>
+        </div>
+        <p slot="footer">              
+            <c-footer source-u-r-l="parentComponent" 
+                      blog-u-r-l="custom-event-communication-in-lightning-web-component">
+            </c-footer>
+        </p>
+    </lightning-card>
 </template>
       

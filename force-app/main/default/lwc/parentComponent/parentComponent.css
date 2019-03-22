@@ -1,3 +1,8 @@
+.contentStyle{
+    border-top: 1px solid rgb(221, 219, 218);
+    width:100%;
+}
+
 .answClass {
     color: green;
     font-weight: bold;
