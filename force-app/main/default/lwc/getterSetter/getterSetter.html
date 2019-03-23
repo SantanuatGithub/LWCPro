@@ -1,3 +1,14 @@
 <template>
-    
+    <lightning-card title = "Getter Setter Mechanism" icon-name="utility:events">          
+        <lightning-layout>          
+                <lightning-layout-item flexibility="auto" padding="around-small">               
+                    <div class="padding-around:small">
+                        <lightning-input label="Message" value={message} onchange={handleMessage}></lightning-input>
+                    </div>
+                    <div class="padding-around:small slds-m-top_small">
+                        <lightning-formatted-text value={outputMessage} ></lightning-formatted-text>
+                    </div>
+                </lightning-layout-item>         
+        </lightning-layout>
+    </lightning-card>
 </template>
