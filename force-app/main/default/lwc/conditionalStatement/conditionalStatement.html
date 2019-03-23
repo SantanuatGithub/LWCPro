@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Conditional Statement" icon-name="utility:check">
+        <lightning-layout>
+            <lightning-layout-item>
+                <lightning-button variant="brand" label="Click Me" onclick={handleClicks}></lightning-button>
+                <template if:true={hasRendered}>
+                    WOW!! Appreciate your patience.
+                </template>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
