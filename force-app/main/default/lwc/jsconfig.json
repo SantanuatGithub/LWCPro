@@ -30,8 +30,14 @@
             "c/communication-section-header": [
                 "communicationSectionHeader/communicationSectionHeader.js"
             ],
+            "c/conditional-statement": [
+                "conditionalStatement/conditionalStatement.js"
+            ],
             "c/detail-component": [
                 "detailComponent/detailComponent.js"
+            ],
+            "c/directive": [
+                "directive/directive.js"
             ],
             "c/display-toast": [
                 "displayToast/displayToast.js"
@@ -83,6 +89,9 @@
             ],
             "c/show-contacts-wmpp": [
                 "showContactsWMPP/showContactsWMPP.js"
+            ],
+            "c/svg-component": [
+                "svgComponent/svgComponent.js"
             ],
             "c/welcome-window": [
                 "welcomeWindow/welcomeWindow.js"

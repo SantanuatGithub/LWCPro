@@ -1,8 +1,8 @@
 import { LightningElement,track } from 'lwc';
 
 export default class ConditionalStatement extends LightningElement {
-    @track hasRendered;
-    count=0;
+    //@track hasRendered;
+    @track count=0;
 
     handleClicks(){
         this.count++;
@@ -11,9 +11,11 @@ export default class ConditionalStatement extends LightningElement {
     }
 
     get hasRendered(){
+        // eslint-disable-next-line no-console
         console.log('count--->'+this.count);
-        if(this.count == 4)
+        if(this.count === 4)
             return true;
-    }
+        return false;
+    }    
 
 }
