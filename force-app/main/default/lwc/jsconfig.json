@@ -33,6 +33,9 @@
             "c/conditional-statement": [
                 "conditionalStatement/conditionalStatement.js"
             ],
+            "c/configurator": [
+                "configurator/configurator.js"
+            ],
             "c/detail-component": [
                 "detailComponent/detailComponent.js"
             ],
@@ -44,6 +47,9 @@
             ],
             "c/footer": [
                 "footer/footer.js"
+            ],
+            "c/get-current-ids": [
+                "getCurrentIds/getCurrentIds.js"
             ],
             "c/getter-setter": [
                 "getterSetter/getterSetter.js"

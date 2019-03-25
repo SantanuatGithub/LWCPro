@@ -6,7 +6,7 @@ export default class Incremental extends LightningElement {
     @track incrementValue = 1;
     incrementBy = 1;
 
-    doIncrement(){
+    increment(){
         this.incrementValue = this.incrementValue + this.incrementBy;
     }
 
