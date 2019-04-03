@@ -3,7 +3,7 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
-            "c/basic-section-header": [
+            "c/basicSectionHeader": [
                 "basicSectionHeader/basicSectionHeader.js"
             ],
             "c/calculation": [
@@ -12,100 +12,111 @@
             "c/calculator": [
                 "calculator/calculator.js"
             ],
-            "c/call-incremental": [
+            "c/callIncremental": [
                 "callIncremental/callIncremental.js"
             ],
-            "c/canvas-subscriber": [
+            "c/canvasSubscriber": [
                 "canvasSubscriber/canvasSubscriber.js"
             ],
-            "c/change-case": [
+            "c/changeCase": [
                 "changeCase/changeCase.js"
             ],
-            "c/change-case-method-caller": [
+            "c/changeCaseMethodCaller": [
                 "changeCaseMethodCaller/changeCaseMethodCaller.js"
             ],
-            "c/child-component": [
+            "c/childComponent": [
                 "childComponent/childComponent.js"
             ],
-            "c/communication-section-header": [
+            "c/communicationSectionHeader": [
                 "communicationSectionHeader/communicationSectionHeader.js"
             ],
-            "c/conditional-statement": [
+            "c/conditionalStatement": [
                 "conditionalStatement/conditionalStatement.js"
             ],
             "c/configurator": [
                 "configurator/configurator.js"
             ],
-            "c/detail-component": [
+            "c/detailComponent": [
                 "detailComponent/detailComponent.js"
             ],
             "c/directive": [
                 "directive/directive.js"
             ],
-            "c/display-toast": [
+            "c/displayToast": [
                 "displayToast/displayToast.js"
             ],
             "c/footer": [
                 "footer/footer.js"
             ],
-            "c/get-current-ids": [
+            "c/getCurrentIds": [
                 "getCurrentIds/getCurrentIds.js"
             ],
-            "c/getter-setter": [
+            "c/getterSetter": [
                 "getterSetter/getterSetter.js"
             ],
             "c/incremental": [
                 "incremental/incremental.js"
             ],
-            "c/lightning-navigation": [
+            "c/lightningNavigation": [
                 "lightningNavigation/lightningNavigation.js"
             ],
-            "c/master-component": [
+            "c/masterComponent": [
                 "masterComponent/masterComponent.js"
             ],
-            "c/pallete-publisher": [
+            "c/palletePublisher": [
                 "palletePublisher/palletePublisher.js"
             ],
-            "c/parent-component": [
+            "c/parentComponent": [
                 "parentComponent/parentComponent.js"
             ],
             "c/pubsub": [
                 "pubsub/pubsub.js"
             ],
-            "c/server-section-header": [
+            "c/serverSectionHeader": [
                 "serverSectionHeader/serverSectionHeader.js"
             ],
-            "c/show-contacts-im": [
+            "c/showContactsIM": [
                 "showContactsIM/showContactsIM.js"
             ],
-            "c/show-contacts-imp": [
+            "c/showContactsIMP": [
                 "showContactsIMP/showContactsIMP.js"
             ],
-            "c/show-contacts-u-irecord-api": [
+            "c/showContactsUIrecordAPI": [
                 "showContactsUIrecordAPI/showContactsUIrecordAPI.js"
             ],
-            "c/show-contacts-wmf": [
+            "c/showContactsWMF": [
                 "showContactsWMF/showContactsWMF.js"
             ],
-            "c/show-contacts-wmfp": [
+            "c/showContactsWMFP": [
                 "showContactsWMFP/showContactsWMFP.js"
             ],
-            "c/show-contacts-wmp": [
+            "c/showContactsWMP": [
                 "showContactsWMP/showContactsWMP.js"
             ],
-            "c/show-contacts-wmpp": [
+            "c/showContactsWMPP": [
                 "showContactsWMPP/showContactsWMPP.js"
             ],
-            "c/svg-component": [
+            "c/svgComponent": [
                 "svgComponent/svgComponent.js"
             ],
-            "c/welcome-window": [
+            "c/welcomeWindow": [
                 "welcomeWindow/welcomeWindow.js"
+            ],
+            "c/showWireApexStaticContact": [
+                "showWireApexStaticContact/showWireApexStaticContact.js"
+            ],
+            "c/showImperativeApexStaticContact": [
+                "showImperativeApexStaticContact/showImperativeApexStaticContact.js"
             ]
         }
     },
     "include": [
         "**/*",
         "../../../../.sfdx/typings/lwc/**/*.d.ts"
-    ]
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
 }

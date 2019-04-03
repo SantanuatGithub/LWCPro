@@ -1,0 +1,19 @@
+<template>
+        <lightning-card title="Showing Static Record (Wire * Apex)">            
+            <lightning-layout> 
+              <lightning-layout-item flexibility="auto" padding="around-small">
+                   Contact
+                   <template if:true={contactObj.data}> 
+                        <div class="slds-m-around_medium">
+                            <p>{name}</p>
+                            <p>{phone}</p>
+                            <p><lightning-formatted-email value={email}></lightning-formatted-email></p>
+                        </div>
+                    </template>
+                    <template if:true={contactObj.error}>
+                        {contactObj.error}>
+                    </template>
+              </lightning-layout-item>
+            </lightning-layout>
+        </lightning-card>
+</template>
