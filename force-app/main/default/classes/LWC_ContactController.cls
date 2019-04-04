@@ -10,7 +10,8 @@ public with sharing class LWC_ContactController{
            if (String.isBlank(accountName)) {
                 return new List<Contact>();
             }
-            String key = '%' + accountName + '%';
+           
+            String key = '%' + accountName + '%';            
             return [SELECT Id, Name, Email FROM Contact WHERE Account.Name LIKE : key];
        }
        
