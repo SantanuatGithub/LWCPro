@@ -1,0 +1,17 @@
+<template>
+        <lightning-card title="Showing User Record by Lightning Record Form"  icon-name="standard:user">
+            <div class="slds-m-around_medium">
+                <lightning-record-view-form object-api-name="User"
+                                            record-id={userId}>
+                    <div class="slds-box">
+                        <lightning-output-field field-name="Name">
+                        </lightning-output-field>
+                        <lightning-output-field field-name="Alias">
+                        </lightning-output-field>
+                        <lightning-output-field field-name="Email">
+                        </lightning-output-field>
+                    </div>                                
+                </lightning-record-view-form>                                                  
+            </div>
+        </lightning-card>
+    </template>
