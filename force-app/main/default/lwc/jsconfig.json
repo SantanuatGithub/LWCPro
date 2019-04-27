@@ -36,6 +36,9 @@
             "c/configurator": [
                 "configurator/configurator.js"
             ],
+            "c/createUIRecord": [
+                "createUIRecord/createUIRecord.js"
+            ],
             "c/detailComponent": [
                 "detailComponent/detailComponent.js"
             ],
@@ -102,20 +105,17 @@
             "c/showWireApexStaticContact": [
                 "showWireApexStaticContact/showWireApexStaticContact.js"
             ],
-            "c/showWireUIListView": [
-                "showWireUIListView/showWireUIListView.js"
+            "c/showWireUIObjectInfo": [
+                "showWireUIObjectInfo/showWireUIObjectInfo.js"
+            ],
+            "c/showWireUIStaticUser": [
+                "showWireUIStaticUser/showWireUIStaticUser.js"
             ],
             "c/svgComponent": [
                 "svgComponent/svgComponent.js"
             ],
             "c/welcomeWindow": [
                 "welcomeWindow/welcomeWindow.js"
-            ],
-            "c/createUIRecord": [
-                "createUIRecord/createUIRecord.js"
-            ],
-            "c/showWireUIObjectInfo": [
-                "showWireUIObjectInfo/showWireUIObjectInfo.js"
             ]
         }
     },
