@@ -116,6 +116,9 @@
             ],
             "c/welcomeWindow": [
                 "welcomeWindow/welcomeWindow.js"
+            ],
+            "c/showImperativeUIStaticUser": [
+                "showImperativeUIStaticUser/showImperativeUIStaticUser.js"
             ]
         }
     },

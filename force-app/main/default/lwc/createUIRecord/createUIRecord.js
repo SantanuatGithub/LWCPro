@@ -30,6 +30,7 @@ export default class CreateUIRecord extends LightningElement {
         fields[CONTACT_FIRST_NAME.fieldApiName] = this.firstName;
         fields[CONTACT_LAST_NAME.fieldApiName] = this.lastName;
         fields[CONTACT_EMAIL.fieldApiName] = this.email;
+
         
         const contactRecord  = {apiName:CONTACT_OBJECT.objectApiName, fields};//rememeber depends on the name exact same name "fields"
         
