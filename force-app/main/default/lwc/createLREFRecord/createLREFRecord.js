@@ -19,6 +19,4 @@ export default class CreateLREFRecord extends LightningElement {
         }
     }
 
-
-
 }
