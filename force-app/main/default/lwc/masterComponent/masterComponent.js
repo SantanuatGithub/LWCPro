@@ -12,8 +12,7 @@ export default class MasterComponent extends LightningElement {
     constructor(){
         super();
 
-        this.message = this.message + "Constructor from Parent --->  "; 
-        this.template.addEventListener('renderedEvent', this.handleCustomEvent.bind(this));   
+        this.message = this.message + "Constructor from Parent --->  ";  
         
     } 
     
@@ -33,8 +32,8 @@ export default class MasterComponent extends LightningElement {
     
     renderedCallback(){
         if(!this.hasRendered){    
-            //console.log('ENTRY');        
-                        
+            console.log('ENTRY');        
+            this.template.addEventListener('renderedEvent', this.handleCustomEvent.bind(this));              
         }
     } 
 

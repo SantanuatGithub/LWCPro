@@ -1,6 +1,6 @@
 public with sharing class LWC_ContactController{
        
-       @AuraEnabled(cacheable = true)
+       @AuraEnabled(cacheable = true) 
        public static List<Contact> getContactList(){
            return [SELECT Id, Name, Email FROM Contact LIMIT 1];
        }
@@ -31,6 +31,11 @@ public with sharing class LWC_ContactController{
 
         @AuraEnabled(cacheable=true)
         public static Contact getStaticContact(){
+            return [SELECT Id, Name, Title, Phone, Email FROM Contact LIMIT 1];
+        }
+
+        @AuraEnabled
+        public static Contact getImperativeStaticContact(){
             return [SELECT Id, Name, Title, Phone, Email FROM Contact LIMIT 1];
         }
 }

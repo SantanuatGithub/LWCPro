@@ -33,4 +33,3 @@ const calculator = (first_param, second_param, mode) => {
   };
   
   export { calculator };
-  

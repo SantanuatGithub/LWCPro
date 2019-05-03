@@ -1,6 +1,6 @@
 import { LightningElement, track } from 'lwc';
 import { getSObjectValue } from '@salesforce/apex';
-import getStaticContact from '@salesforce/apex/LWC_ContactController.getStaticContact';
+import getImperativeStaticContact from '@salesforce/apex/LWC_ContactController.getImperativeStaticContact';
 
 import CONTACT_NAME_FIELD from '@salesforce/schema/Contact.Name';
 import CONTACT_PHONE_FIELD from '@salesforce/schema/Contact.Phone';
@@ -12,7 +12,7 @@ export default class ShowImperativeApexStaticContact extends LightningElement {
     @track error;
 
     connectedCallback(){
-        getStaticContact()
+        getImperativeStaticContact()
         .then(result => {
             this.contactObj = result;
             this.error = undefined;

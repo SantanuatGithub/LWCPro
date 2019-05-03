@@ -26,13 +26,13 @@ export default class CreateUIRecord extends LightningElement {
 
     createContact(){
 
-        const fields = {};
-        fields[CONTACT_FIRST_NAME.fieldApiName] = this.firstName;
-        fields[CONTACT_LAST_NAME.fieldApiName] = this.lastName;
-        fields[CONTACT_EMAIL.fieldApiName] = this.email;
+        const FIELDS = {};
+        FIELDS[CONTACT_FIRST_NAME.fieldApiName] = this.firstName;
+        FIELDS[CONTACT_LAST_NAME.fieldApiName] = this.lastName;
+        FIELDS[CONTACT_EMAIL.fieldApiName] = this.email;
 
         
-        const contactRecord  = {apiName:CONTACT_OBJECT.objectApiName, fields};//rememeber depends on the name exact same name "fields"
+        const contactRecord  = {apiName:CONTACT_OBJECT.objectApiName, fields: FIELDS};
         
         createRecord(contactRecord)
             .then(contact => {
