@@ -1,0 +1,22 @@
+{
+  "name": "lwcpro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantanuatGithub/LWCPro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantanuatGithub/LWCPro/issues"
+  },
+  "homepage": "https://github.com/SantanuatGithub/LWCPro#readme",
+  "devDependencies": {
+    "@salesforce/lwc-jest": "^0.5.4"
+  }
+}
